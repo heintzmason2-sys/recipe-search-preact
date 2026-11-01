@@ -2,7 +2,7 @@ import RecipeItem from "./RecipeItem";
 
 function RecipeList({ recipes }) {
   return (
-    <div className="recipe-list">
+    <ul className="recipe-list">
       {recipes.map((recipe) => (
         <RecipeItem
         key={recipe.id}
@@ -14,7 +14,7 @@ function RecipeList({ recipes }) {
         area={recipe.area}
         />
       ))}
-    </div>
+    </ul>
   );
 }
 
